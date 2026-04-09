@@ -1,0 +1,180 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling umum */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container utama untuk form login */
+.login-box-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 60px 50px; /* Ditingkatkan jaraknya agar lebih longgar */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Container form login */
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header untuk logo */
+.mbr-login-hd {
+    text-align: center;
+    margin-bottom: 30px; /* Menambahkan jarak antara logo dan form */
+}
+
+/* Logo */
+.mbr-login-hd img {
+    width: 160px;
+    height: 36px;
+}
+
+/* Judul halaman login */
+.challenge-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2b2b2b;
+    margin-bottom: 20px; /* Jarak lebih besar antara judul dan subjudul */
+}
+
+/* Subjudul */
+.challenge-desc {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 25px; /* Jarak lebih besar antara subjudul dan form */
+}
+
+/* Input group */
+.input-group {
+    width: 100%;
+    margin-bottom: 24px; /* Jarak lebih besar antara input field */
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 18px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Tombol submit */
+.button-container {
+    width: 100%;
+    margin-top: 24px; /* Jarak lebih besar antara input dan tombol */
+}
+
+button,
+#login-signin {
+    width: 100%;
+    padding: 18px;
+    font-size: 16px;
+    background-color: #6a0dad; /* Warna ungu mirip Yahoo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+#login-signin:hover {
+    background-color: #570f94;
+}
+
+/* Link untuk "Buat Akun" */
+.sign-up-link {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.sign-up-link a {
+    color: #6a0dad; /* Warna ungu mirip Yahoo */
+    text-decoration: none;
+}
+
+.sign-up-link a:hover {
+    text-decoration: underline;
+}
+
+/* Lupa username */
+.forgot-link {
+    font-size: 14px;
+    color: #6a0dad;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Bagian social login */
+.social-login-container {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.social-button {
+    padding: 14px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.social-button:hover {
+    background-color: #e1e1e1;
+}
+
+.or-cont {
+    font-size: 14px;
+    margin: 20px 0; /* Jarak lebih besar di sekitar teks "or" */
+    color: #777;
+}
+
+/* Tampilan responsif untuk perangkat mobile */
+@media (max-width: 480px) {
+    .login-box-container {
+        padding: 40px 30px; /* Menyesuaikan padding di mobile */
+    }
+
+    .challenge-heading {
+        font-size: 24px;
+    }
+
+    .challenge-desc {
+        font-size: 13px;
+    }
+
+    .input-group input {
+        padding: 16px;
+    }
+
+    button,
+    #login-signin {
+        padding: 16px;
+    }
+}
